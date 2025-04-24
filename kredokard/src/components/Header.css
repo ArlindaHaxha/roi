@@ -1,0 +1,131 @@
+/* General Reset */
+header,
+nav,
+ul {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header-area {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+/* Transparent background layer */
+.header-area::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(4, 14, 39, 0.7); /* semi-transparent bg */
+  z-index: -1;
+}
+
+.main-header-area {
+  position: relative;
+  padding: 0;
+}
+
+.header_bottom_border {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+/* Larger logo */
+.logo img.main_logo {
+  padding: 20px;
+  height: 70px;
+  width: 200px;
+}
+
+/* Align logo + nav + actions */
+.header_bottom_border .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+/* Navigation */
+nav.main-menu {
+  flex-grow: 1;
+  text-align: center;
+}
+
+nav.main-menu ul#navigation {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav.main-menu ul#navigation li a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+nav.main-menu ul#navigation li a:hover {
+  color: #63b649;
+}
+
+/* Phone number and apply button */
+.Appointment {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+}
+
+.phone_num a {
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+}
+
+.phone_num a i {
+  margin-right: 6px;
+  color: #63b649;
+}
+
+/* Apply Button */
+.boxed-btn4 {
+  border: 1px solid #63b649;
+  padding: 10px 22px;
+  background: transparent;
+  color: #63b649;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.boxed-btn4:hover {
+  background: #63b649;
+  color: #fff;
+}
+
+/* Responsive Navigation */
+.mobile_menu {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  nav.main-menu {
+    display: none;
+  }
+  .mobile_menu {
+    display: block;
+  }
+  .Appointment {
+    justify-content: center;
+    flex-direction: column;
+  }
+}
