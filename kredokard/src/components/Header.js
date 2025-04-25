@@ -1,6 +1,6 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import './Header.css';  
+import React from "react";
+import { Link } from "react-router-dom";
+import "./Header.css";
 import image from "../assets/logo.png";
 
 const Header = () => (
@@ -19,21 +19,35 @@ const Header = () => (
             <div className="col-xl-6 col-lg-7">
               <nav className="main-menu d-none d-lg-block">
                 <ul id="navigation">
-                  <li><Link to="/kako-da-platam">Како да платам</Link></li>
-                  <li><a href="/opsti-uslovi">Општи услови</a></li>
-                  <li><a href="#prasanja">Прашања</a></li>
-                  <li><a href="/tarifnik">Тарифник</a></li>
-                  <li><a href="/kontakt">Контакт</a></li>
+                  <li>
+                    <Link to="/kako-da-platam">Како да платам</Link>
+                  </li>
+                  <li>
+                    <Link to="/opsti-uslovi">Општи услови</Link>
+                  </li>
+                  <li>
+                    <a href="#prasanja">Прашања</a>
+                  </li>
+                  <li>
+                    <a href="/tarifnik">Тарифник</a>
+                  </li>
+                  <li>
+                    <Link to="/kontakt">Контакт</Link>
+                  </li>
                 </ul>
               </nav>
             </div>
             <div className="col-xl-3 col-lg-3 d-none d-lg-block">
               <div className="Appointment">
                 <div className="phone_num d-none d-xl-block">
-                  <a href="tel:+38923243003"><i className="fa fa-phone"></i> +389 2 3243 003</a>
+                  <a href="tel:+38923243003">
+                    <i className="fa fa-phone"></i> +389 2 3243 003
+                  </a>
                 </div>
                 <div className="d-none d-lg-block">
-                  <Link className="boxed-btn4" to="/">Аплицирај</Link>
+                  <Link className="boxed-btn4" to="/">
+                    Аплицирај
+                  </Link>
                 </div>
               </div>
             </div>

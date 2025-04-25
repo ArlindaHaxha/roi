@@ -5,6 +5,8 @@ import Footer from "./components/Footer";
 import LoanApplication from "./pages/LoanApplication";
 import MainContent from "./pages/MainContent";
 import Tarifnik from "./pages/Tarifnik";
+import GeneralConditions from "./pages/GenConditions";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
           <Route path="/" element={<LoanApplication />} />
           <Route path="/kako-da-platam" element={<MainContent />} />
           <Route path="/tarifnik" element={<Tarifnik />} />
+          <Route path="/opsti-uslovi" element={<GeneralConditions />} />
+          <Route path="/kontakt" element={<Contact />} />
         </Routes>
         <Footer />
       </div>
