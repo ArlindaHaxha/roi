@@ -33,7 +33,7 @@ const Header = () => (
                   <a href="tel:+38923243003"><i className="fa fa-phone"></i> +389 2 3243 003</a>
                 </div>
                 <div className="d-none d-lg-block">
-                  <a className="boxed-btn4" href="#apliciraj">Аплицирај</a>
+                  <Link className="boxed-btn4" to="/">Аплицирај</Link>
                 </div>
               </div>
             </div>
