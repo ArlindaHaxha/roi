@@ -1,7 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Header.css';  
 import image from "../assets/logo.png";
-import Main from "../pages/MainContent";
 
 const Header = () => (
   <header className="header-area">
@@ -11,15 +11,15 @@ const Header = () => (
           <div className="row align-items-center">
             <div className="col-xl-3 col-lg-2">
               <div className="logo">
-                <a href="/">
+                <Link to="/">
                   <img src={image} alt="Kredo Kard" className="main_logo" />
-                </a>
+                </Link>
               </div>
             </div>
             <div className="col-xl-6 col-lg-7">
               <nav className="main-menu d-none d-lg-block">
                 <ul id="navigation">
-                  <li><a href={Main}>Како да платам</a></li>
+                  <li><Link to="/kako-da-platam">Како да платам</Link></li>
                   <li><a href="/opsti-uslovi">Општи услови</a></li>
                   <li><a href="#prasanja">Прашања</a></li>
                   <li><a href="/tarifnik">Тарифник</a></li>
