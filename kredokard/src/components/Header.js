@@ -1,6 +1,7 @@
 import React from 'react';
 import './Header.css';  
 import image from "../assets/logo.png";
+import Main from "../pages/MainContent";
 
 const Header = () => (
   <header className="header-area">
@@ -18,7 +19,7 @@ const Header = () => (
             <div className="col-xl-6 col-lg-7">
               <nav className="main-menu d-none d-lg-block">
                 <ul id="navigation">
-                  <li><a href="/kako-da-platam">Како да платам</a></li>
+                  <li><a href={Main}>Како да платам</a></li>
                   <li><a href="/opsti-uslovi">Општи услови</a></li>
                   <li><a href="#prasanja">Прашања</a></li>
                   <li><a href="/tarifnik">Тарифник</a></li>

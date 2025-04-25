@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    justify-content:space-evenly;
+    height: 500px;
+    margin-top: 250px;
+}
+.container-1 img{
+    width: 550px;
+    height: 350px;
+}
+.container-2 h1 {
+    font-size: 50px;
+    font-weight: 400;
+}
+.container-2 p {
+    color: #7A838B;
+    font-size: 16px;
+}
+.container-2 ul li{
+    font-size: 16px;
+    line-height: 32px;
+    color: #040E27;
+    font-weight: 400;
+    position: relative;
+    padding-left: 23px;
+}
+.container-2 ul li::marker {
+    color: #0A8CFF;
+  }
